@@ -13,6 +13,22 @@
         app:layout_constraintBottom_toTopOf="@id/main_player_cl"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <SeekBar
+        android:id="@+id/main_progress_sb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:layout_marginBottom="-3dp"
+        android:progressBackgroundTint="@color/song_player_bg"
+        android:progressTint="@color/song_player"
+        android:progress="0"
+        android:max="100000"
+        android:thumb="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_player_cl" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_player_cl"
@@ -45,7 +61,7 @@
                 android:id="@+id/main_miniplayer_singer_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="아이유 (IU)"
+                android:text="@string/iu"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -59,6 +75,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:id="@+id/main_previous_iv"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/btn_miniplayer_previous" />
@@ -78,6 +95,7 @@
 
 
             <ImageView
+                android:id="@+id/main_next_iv"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/btn_miniplayer_next" />

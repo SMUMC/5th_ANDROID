@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColorHint="#F52C2FDC"
+        android:background="#4D774C4C"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:hint="다음 화면에 적을 텍스트 입력:"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:textSize="30sp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="#111714"/>
+
+</LinearLayout>
